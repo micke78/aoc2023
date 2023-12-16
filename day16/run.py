@@ -1,12 +1,8 @@
 #!/usr/bin/env python3
 
 
-moveids = {
-    "left":  1,
-    "right": 2,
-    "up":    4,
-    "down":  8,
-}
+moveids = { "left":  1, "right": 2, "up":    4, "down":  8 }
+
 items = {
     "|": {
         "left":  [ "up", "down" ],
@@ -123,7 +119,6 @@ def part2(map):
         en = max(en,en2)
         en2 = get_energized(map, { "row": len(map.map), "col": col, "move": "up" })
         en = max(en,en2)
-
     print(en)
 
     

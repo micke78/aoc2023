@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-
 def load_patterns(filename):
     patterns = []
     with open(filename) as f:
